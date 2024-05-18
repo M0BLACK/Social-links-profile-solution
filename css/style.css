@@ -1,0 +1,91 @@
+:root {
+    --white: #FFFFFF;
+    --Grey: #333333;
+    --Dark-Grey: #1f1f1f;
+    --Off-Black: #141414;
+    --Green: hsl(75, 94%, 57%);
+}
+*, ::after, ::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Off-Black);
+    height: 100vh;
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    outline: none;
+    max-width: 100%;
+    display:  block;
+}
+p {
+    font-size: 14px;
+}
+ul {
+    list-style-type: none;
+
+}
+
+.avatar , .location, .description {
+    padding-bottom: 24px;
+}
+.card {
+    background-color: var(--Dark-Grey);
+    width: 87.2%;
+    padding: 24px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.avatar {
+    max-width: 33%;
+    display: inline-block;
+    margin: 0 auto;
+}
+.avatar > img {
+    max-width: 100%;
+    border-radius: 100%;
+}
+.name {
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.location {
+    color: var(--Green);
+    font-size: .85rem;
+}
+
+ul > li{
+    max-width: 100%;
+    background-color: var(--Grey);
+    margin: 15px auto;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-weight: 900;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+ul > li:hover {
+    background-color: var(--Green);
+    color: var(--white);
+}
+
+@media screen and (width > 375px) {
+    .card {
+        max-width: 384px;
+
+    }
+    
+}
